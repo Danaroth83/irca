@@ -107,8 +107,9 @@ class CharacterizationPixel:
 
         title = f"Acquisition (Interferometer index: {interferometer})"
         legend = ["Raw acquisition", "Flat field", "Normalized acquisition"]
+        wavenumbers = self.central_wavenumbers * 10000
         fig, ax = plot_1d(
-            x=self.central_wavenumbers * 10000,
+            x=wavenumbers,
             y=np.vstack((data_mean_one, norm_mean_one, normalized_data)),
             x_label=r"Central wavenumbers [$\mathrm{cm^{-1}}$]",
             y_label="Normalized intensity",
@@ -116,6 +117,7 @@ class CharacterizationPixel:
             legend=legend,
             font_size=font_size,
             figure=figure,
+            x_limit=(wavenumbers.min(), wavenumbers.max()),
         )
         ax.ticklabel_format(
             axis='x', style='sci', scilimits=(0, 0), useMathText=True
@@ -144,8 +146,9 @@ class CharacterizationPixel:
             y = np.vstack((data_scaled, estimation_scaled))
             title = f"Characterization"
             legend = ["Raw acquisition", "Fit transfer function"]
+        wavenumbers = self.central_wavenumbers * 10000
         fig, ax = plot_1d(
-            x=self.central_wavenumbers * 10000,
+            x=wavenumbers,
             y=y,
             x_label=r"Central wavenumbers [$\mathrm{c m^{-1}}$]",
             y_label="Normalized intensity",
@@ -153,6 +156,7 @@ class CharacterizationPixel:
             legend=legend,
             font_size=font_size,
             figure=figure,
+            x_limit=(wavenumbers.min(), wavenumbers.max()),
         )
         ax.ticklabel_format(
             axis='x', style='sci', scilimits=(0, 0), useMathText=True
@@ -464,16 +468,18 @@ class Characterization:
         transfer_local = self.transfer_function(wavenumber=wavenumbers)
         transfer_local = transfer_local[interferometer, :] / transfer_mean
         transfer_total = np.vstack((transfer_pick, transfer_local))
+        wavenumbers = wavenumbers * 10000
         fig, ax = plot_1d(
-            x=wavenumbers * 10000,  # to show in cm^{-1}
+            x=wavenumbers,  # to show in cm^{-1}
             y=transfer_total,
-            x_label=r"Wavenumbers [$\mathrm{c m^{-1}}$]",
+            x_label=r"Wavenumbers [$\mathrm{cm^{-1}}$]",
             y_label="Normalized intensity",
             title="Characterization",
             font_size=font_size,
             save_filepath=save_filepath,
             figure=figure,
             legend=["Reference", "Estimated"],
+            x_limit=(wavenumbers.min(), wavenumbers.max())
         )
         ax.ticklabel_format(
             axis='x', style='sci', scilimits=(0, 0), useMathText=True

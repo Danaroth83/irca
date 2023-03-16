@@ -149,6 +149,7 @@ class Imspoc:
         corners = self.corners
         if points is not None:
             points = np.array(points)[np.newaxis, :, :]
+            points[:, :, 0] = self.shape[0] - points[:, :, 0]
             corners_ext = corners[:, np.newaxis, :]
             points = (points + corners_ext).reshape((-1, 2))
         size_broadcast = np.broadcast_to([self.size], corners.shape)
@@ -159,6 +160,8 @@ class Imspoc:
             origin=OriginEnum.LOWER,
             points=points,
             figure=figure,
+            center_color=None,
+            point_style={"marker": "+", "c": "r"},
         )
 
     def visualize_datacube(

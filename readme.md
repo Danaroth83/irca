@@ -7,30 +7,33 @@ Main functionalities:
 
 ## Demonstration scripts
 
-This repository provides three Jupyter notebooks associated to the three main functionalities of the library:
+This repository provides three Jupyter notebooks associated to the main functionalities of the library:
+
+### Model:
+- Demo: `jupyter notebook .\notebooks\model.ipynb`
+- Shows the effect of modifying parameters on the Fabry-Perot transfer function
+- Provides an interactive tool to manually fit the curve to a reference
+
+<img src="assets/model.png" width="50%" height="50%">
 
 ### Characterization:
-- Demo: `notebooks\characterization.ipynb`
+- Demo: `jupyter notebook .\notebooks\characterization.ipynb`
 - Loads the characterization options for the IRCA proposed method
 - Estimates the parameters of the transfer function for each interferometer
 - Visualizes the parameters and compares the result with the training acquisitions
 
-### Model:
-- Demo: `notebooks\model.ipynb`
-- Shows the effect of modifying parameters on the Fabry-Perot transfer function
-- Provides an interactive tool to manually fit the curve to a reference
+<img src="assets/characterization.png" width="50%" height="50%">
 
 ### Simulator:
-- Demo: `notebooks\simulator.ipynb`
+- Demo: `jupyter notebook .\notebooks\characterization.ipynb`
 - Loads a conventional hyperspectral image and the characterization of an ImSPOC
 - Simulates an acquisition obtained by an ImSPOC device with those characteristics
 
-
+<img src="assets/simulator.png" width="70%" height="70%">
 
 ## Project Structure
 
-    ├── README.md                   <- This file
-    ├── requirements.txt            <- Lock file of package requirements
+    ├── assets                      <- Figures for this document
     │
     ├── data                        <- Data folder
     │   ├── acquisitions            <- Sample ImSPOC raw acquisitions
@@ -57,6 +60,21 @@ This repository provides three Jupyter notebooks associated to the three main fu
 - SciPy: https://scipy.org/
 - Matplotlib: https://matplotlib.org/
 - Pydantic: https://docs.pydantic.dev/
+- Jupyterlab: https://jupyter.org/
 
 To install the requirements:
 - `pip install -r requirements.txt`
+
+## Citation
+If you use this code, please cite:
+
+```
+@article{picone2023irca,
+author = {Picone, Daniele and Gousset, Silvere and Dalla Mura, Mauro and Yann, Ferrec and Le Coarer, Etienne},
+title = {The {ImSPOC} snapshot image spectrometer: {Image} formation model and spectral characterization},
+booktitle = {arXiv},
+note = {Under review.},
+month = mar,
+year = {2023},
+}
+```
