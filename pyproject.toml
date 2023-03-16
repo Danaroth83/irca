@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "irca"
+version = "0.1.0"
+description = ""
+authors = ["Daniele Picone <danaroth83@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+numpy = "^1.24.2"
+matplotlib = "^3.7.1"
+scipy = "^1.10.1"
+pydantic = "^1.10.6"
+PyQt5 = "^5.15.9"
+tqdm = "^4.65.0"
+jupyter = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

@@ -1,0 +1,22 @@
+{
+    "id": "imspoc_uv_2",
+    "thickness_minimum": 0,
+    "thickness_step": 87.5,
+    "subimage_arrangement": "vertical",
+    "image_size" : [
+        1096,
+        2808
+    ],
+    "subimage_size": [
+        96,
+        96
+    ],
+    "subimage_center": [
+        71,
+        40
+    ],
+    "subimage_amount": [
+        11,
+        29
+    ]
+}

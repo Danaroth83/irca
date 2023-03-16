@@ -1,0 +1,478 @@
+{
+    "options_list": [
+        [
+            {
+                "id": "ml",
+                "average": true,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5,
+                        "choice": false
+                    },
+                    "reflectivity": {
+                        "degree": 5
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "ml",
+                "average": true,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5,
+                        "choice": false
+                    },
+                    "reflectivity": {
+                        "degree": 5
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "ml",
+                "average": true,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5,
+                        "choice": true
+                    },
+                    "reflectivity": {
+                        "degree": 5
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "ml",
+                "average": true,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5,
+                        "choice": true
+                    },
+                    "reflectivity": {
+                        "degree": 5
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "ml",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "es",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.02,
+                        "samples": 2500
+                    },
+                    "reflectivity": {
+                        "samples": 250
+                    },
+                    "phase_shift": {
+                        "samples": 2500
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "es",
+                "average": false,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.02,
+                        "samples": 2500
+                    },
+                    "reflectivity": {
+                        "samples": 250
+                    },
+                    "phase_shift": {
+                        "samples": 2500
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "es",
+                "average": false,
+                "model": 3,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.02,
+                        "samples": 2500
+                    },
+                    "reflectivity": {
+                        "samples": 250
+                    },
+                    "phase_shift": {
+                        "samples": 2500
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "es",
+                "average": true,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.02,
+                        "samples": 2500
+                    },
+                    "reflectivity": {
+                        "samples": 250
+                    },
+                    "phase_shift": {
+                        "samples": 2500
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 5,
+                        "choice": true
+                    },
+                    "reflectivity": {
+                        "degree": 5
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "ml",
+                "average": true,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 3
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 3,
+                        "choice": true
+                    },
+                    "reflectivity": {
+                        "degree": 3
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "ml",
+                "average": true,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 4
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 4,
+                        "choice": true
+                    },
+                    "reflectivity": {
+                        "degree": 4
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "ml",
+                "average": true,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 6
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 6,
+                        "choice": true
+                    },
+                    "reflectivity": {
+                        "degree": 6
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "ml",
+                "average": true,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 7
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 7,
+                        "choice": true
+                    },
+                    "reflectivity": {
+                        "degree": 7
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "ml",
+                "average": true,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 8
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 8,
+                        "choice": true
+                    },
+                    "reflectivity": {
+                        "degree": 8
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "id": "ml",
+                "average": true,
+                "model": 2,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 9
+                    },
+                    "opd": {
+                        "relative_minimum": 0.01,
+                        "relative_maximum": 1,
+                        "relative_span": 0.05,
+                        "samples": 10000
+                    }
+                }
+            },
+            {
+                "id": "gn",
+                "average": false,
+                "model": 0,
+                "polynomial": "Polynomial",
+                "parameters": {
+                    "gain": {
+                        "degree": 9,
+                        "choice": true
+                    },
+                    "reflectivity": {
+                        "degree": 9
+                    }
+                }
+            }
+        ]
+    ]
+}
