@@ -112,7 +112,7 @@ cffi==1.15.1 ; python_version >= "3.8" and python_version < "3.12" \
     --hash=sha256:ed9cb427ba5504c1dc15ede7d516b84757c3e3d7868ccc85121d9310d27eed0b \
     --hash=sha256:fa6693661a4c91757f4412306191b6dc88c1703f780c8234035eac011922bc01 \
     --hash=sha256:fcd131dd944808b5bdb38e6f5b53013c5aa4f334c5cad0c72742f6eba4b73db0
-colorama==0.4.6 ; python_version >= "3.8" and python_version < "3.12" and platform_system == "Windows" or python_version >= "3.8" and python_version < "3.12" and sys_platform == "win32" \
+colorama==0.4.6 ; python_version >= "3.8" and python_version < "3.12" and sys_platform == "win32" \
     --hash=sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44 \
     --hash=sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6
 comm==0.1.2 ; python_version >= "3.8" and python_version < "3.12" \
@@ -954,9 +954,6 @@ tornado==6.2 ; python_version >= "3.8" and python_version < "3.12" \
     --hash=sha256:ba09ef14ca9893954244fd872798b4ccb2367c165946ce2dd7376aebdde8e3ac \
     --hash=sha256:d3a2f5999215a3a06a4fc218026cd84c61b8b2b40ac5296a6db1f1451ef04c1e \
     --hash=sha256:e5f923aa6a47e133d1cf87d60700889d7eae68988704e20c75fb2d65677a8e4b
-tqdm==4.65.0 ; python_version >= "3.8" and python_version < "3.12" \
-    --hash=sha256:1871fb68a86b8fb3b59ca4cdd3dcccbc7e6d613eeed31f4c332531977b89beb5 \
-    --hash=sha256:c4f53a17fe37e132815abceec022631be8ffe1b9381c2e6e30aa70edc99e9671
 traitlets==5.9.0 ; python_version >= "3.8" and python_version < "3.12" \
     --hash=sha256:9e6ec080259b9a5940c797d58b613b5e31441c2257b87c2e795c5228ae80d2d8 \
     --hash=sha256:f6cde21a9c68cf756af02035f72d5a723bf607e862e7be33ece505abf4a3bad9
