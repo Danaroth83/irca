@@ -12,7 +12,6 @@ matplotlib = "^3.7.1"
 scipy = "^1.10.1"
 pydantic = "^1.10.6"
 PyQt5 = "^5.15.9"
-jupyterlab = "^3.6.1"
 jupyter = "^1.0.0"
 
 

@@ -10,14 +10,14 @@ Main functionalities:
 This repository provides three Jupyter notebooks associated to the main functionalities of the library:
 
 ### Model:
-- Demo: `jupyter notebook .\notebooks\model.ipynb`
+- Demo: `jupyter notebook ./notebooks/model.ipynb`
 - Shows the effect of modifying parameters on the Fabry-Perot transfer function
 - Provides an interactive tool to manually fit the curve to a reference
 
 <img src="assets/model.png" width="50%" height="50%">
 
 ### Characterization:
-- Demo: `jupyter notebook .\notebooks\characterization.ipynb`
+- Demo: `jupyter notebook ./notebooks/characterization.ipynb`
 - Loads the characterization options for the IRCA proposed method
 - Estimates the parameters of the transfer function for each interferometer
 - Visualizes the parameters and compares the result with the training acquisitions
@@ -25,7 +25,7 @@ This repository provides three Jupyter notebooks associated to the main function
 <img src="assets/characterization.png" width="50%" height="50%">
 
 ### Simulator:
-- Demo: `jupyter notebook .\notebooks\characterization.ipynb`
+- Demo: `jupyter notebook ./notebooks/characterization.ipynb`
 - Loads a conventional hyperspectral image and the characterization of an ImSPOC
 - Simulates an acquisition obtained by an ImSPOC device with those characteristics
 
@@ -60,13 +60,13 @@ This repository provides three Jupyter notebooks associated to the main function
 - SciPy: https://scipy.org/
 - Matplotlib: https://matplotlib.org/
 - Pydantic: https://docs.pydantic.dev/
-- Jupyterlab: https://jupyter.org/
+- Jupyter Notebook: https://jupyter.org/
 
 To install the requirements:
 - `pip install -r requirements.txt`
 
 ## Citation
-If you use this code, please cite:
+To use this code, please cite:
 
 ```
 @article{picone2023irca,
