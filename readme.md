@@ -1,5 +1,5 @@
 # IRCA
-Python library for the interferometry response characterization algorithm (IRCA), containing a set of utilities for estimating the parametric spectral response of the image spectrometer on chip (ImSPOC) device.
+Python library for the interferometer response characterization algorithm (IRCA), containing a set of utilities for estimating the parametric spectral response of the image spectrometer on chip (ImSPOC) device.
 Main functionalities:
 - Modeling the optical transfer function of a Fabry-Perot interferometer
 - Characterizing the spectral response of an ImSPOC interferometer
