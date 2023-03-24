@@ -14,7 +14,7 @@ This repository provides three Jupyter notebooks associated to the main function
 - Shows the effect of modifying parameters on the Fabry-Perot transfer function
 - Provides an interactive tool to manually fit the curve to a reference
 
-<img src="assets/model.png" width="50%" height="50%">
+<img src="data/assets/model.png" width="50%" height="50%">
 
 ### Characterization:
 - Demo: `jupyter notebook ./notebooks/characterization.ipynb`
@@ -22,21 +22,20 @@ This repository provides three Jupyter notebooks associated to the main function
 - Estimates the parameters of the transfer function for each interferometer
 - Visualizes the parameters and compares the result with the training acquisitions
 
-<img src="assets/characterization.png" width="50%" height="50%">
+<img src="data/assets/characterization.png" width="50%" height="50%">
 
 ### Simulator:
 - Demo: `jupyter notebook ./notebooks/characterization.ipynb`
 - Loads a conventional hyperspectral image and the characterization of an ImSPOC
 - Simulates an acquisition obtained by an ImSPOC device with those characteristics
 
-<img src="assets/simulator.png" width="70%" height="70%">
+<img src="data/assets/simulator.png" width="85%" height="85%">
 
 ## Project Structure
 
-    ├── assets                      <- Figures for this document
-    │
     ├── data                        <- Data folder
     │   ├── acquisitions            <- Sample ImSPOC raw acquisitions
+    │   ├── assets                  <- Web assets for this document
     │   ├── characterization        <- Characterization options and parameters
     │   ├── device                  <- Device information
     │   └── hyperspectral           <- Sample hyperspectral image
@@ -71,7 +70,7 @@ To use this code, please cite:
 ```
 @article{picone2023irca,
 author = {Picone, Daniele and Gousset, Silvere and Dalla Mura, Mauro and Yann, Ferrec and Le Coarer, Etienne},
-title = {The {ImSPOC} snapshot image spectrometer: {Image} formation model and spectral characterization},
+title = {The {ImSPOC} snapshot imaging spectrometer: {Image} formation model and device characterization},
 booktitle = {arXiv},
 note = {Under review.},
 month = mar,
