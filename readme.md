@@ -72,7 +72,7 @@ To use this code, please cite:
 
 ```
 @article{picone2023irca,
-      title={The ImSPOC snapshot imaging spectrometer: image formation model and device characterization}, 
+      title={The {ImSPOC} snapshot imaging spectrometer: image formation model and device characterization}, 
       author={Picone, Daniele and Gousset, Silvere and Dalla Mura, Mauro and Ferrec, Yann and Le Coarer, Etienne},
       booktitle={arXiv},
       year={2023},
@@ -81,6 +81,6 @@ To use this code, please cite:
       archivePrefix={arXiv},
       primaryClass={eess.IV},
       doi={https://doi.org/10.48550/arXiv.2303.14076},
-      note={Under review.}
+      note={Under review.},
 }
 ```
