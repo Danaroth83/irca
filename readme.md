@@ -1,6 +1,6 @@
 # IRCA
 
-[![DOI](https://zenodo.org/badge/{github_id}.svg)](https://zenodo.org/badge/latestdoi/{github_id})
+[![DOI](https://zenodo.org/badge/614794669.svg)](https://zenodo.org/badge/latestdoi/614794669)
 
 Python library for the interferometer response characterization algorithm (IRCA), containing a set of utilities for estimating the parametric spectral response of the Image SPectrometer On Chip (ImSPOC) device.
 Main functionalities:
