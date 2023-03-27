@@ -1,5 +1,7 @@
 # IRCA
-Python library for the interferometer response characterization algorithm (IRCA), containing a set of utilities for estimating the parametric spectral response of the image spectrometer on chip (ImSPOC) device.
+
+[![DOI](https://zenodo.org/badge/{github_id}.svg)](https://zenodo.org/badge/latestdoi/{github_id})
+Python library for the interferometer response characterization algorithm (IRCA), containing a set of utilities for estimating the parametric spectral response of the Image SPectrometer On Chip (ImSPOC) device.
 Main functionalities:
 - Modeling the optical transfer function of a Fabry-Perot interferometer
 - Characterizing the spectral response of an ImSPOC interferometer
@@ -69,11 +71,15 @@ To use this code, please cite:
 
 ```
 @article{picone2023irca,
-author = {Picone, Daniele and Gousset, Silvere and Dalla Mura, Mauro and Yann, Ferrec and Le Coarer, Etienne},
-title = {The {ImSPOC} snapshot imaging spectrometer: {Image} formation model and device characterization},
-booktitle = {arXiv},
-note = {Under review.},
-month = mar,
-year = {2023},
+      title={The ImSPOC snapshot imaging spectrometer: image formation model and device characterization}, 
+      author={Picone, Daniele and Gousset, Silvere and Dalla Mura, Mauro and Ferrec, Yann and Le Coarer, Etienne},
+      booktitle={arXiv},
+      year={2023},
+      month=mar,
+      eprint={2303.14076},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      doi={https://doi.org/10.48550/arXiv.2303.14076},
+      note={Under review.}
 }
 ```
