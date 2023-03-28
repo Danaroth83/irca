@@ -1,0 +1,15 @@
+{
+  "acquisition_id": 17,
+  "average": false,
+  "crop": null,
+  "device_id": "wfai_1",
+  "flat": false,
+  "is_normalized": true,
+  "local": false,
+  "opd_step": 0.17500000000000002,
+  "percentile": 98.0,
+  "window": [
+    5,
+    5
+  ]
+}

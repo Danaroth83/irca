@@ -1,0 +1,37 @@
+{
+    "__root__":
+    [
+        {
+            "id": "ml",
+            "average": true,
+            "model": 2,
+            "polynomial": "Polynomial",
+            "parameters": {
+                "gain": {
+                    "degree": 5
+                },
+                "opd": {
+                    "relative_minimum": 0.02,
+                    "relative_maximum": 1,
+                    "relative_span": 0.1,
+                    "samples": 10000
+                }
+            }
+        },
+        {
+            "id": "gn",
+            "average": false,
+            "model": 0,
+            "polynomial": "Polynomial",
+            "parameters": {
+                "gain": {
+                    "degree": 5,
+                    "choice": true
+                },
+                "reflectivity": {
+                    "degree": 5
+                }
+            }
+        }
+    ]
+}

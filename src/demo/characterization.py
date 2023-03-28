@@ -8,7 +8,7 @@ from src.interface.characterization import CharacterizationInterface
 def main() -> None:
 
     acquisition_subfolder = "acquisitions/imspoc_uv_2"
-    options_file = "characterization/characterization_options.json"
+    options_file = "characterization/imspoc_uv_2_characterization_options.json"
     device_file = "device/imspoc_uv_2.json"
     interferometer = 40
 

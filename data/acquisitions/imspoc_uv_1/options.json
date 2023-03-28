@@ -1,0 +1,15 @@
+{
+  "acquisition_id": 9,
+  "average": false,
+  "crop": null,
+  "device_id": "imspoc_uv_1",
+  "flat": false,
+  "is_normalized": false,
+  "local": false,
+  "opd_step": 0.2,
+  "percentile": 98.0,
+  "window": [
+    5,
+    5
+  ]
+}
