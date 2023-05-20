@@ -142,13 +142,9 @@ def plot_1d(
 
     if reciprocal_axis:
         ax2 = ax.secondary_xaxis('top', functions=(wn_to_wl, wl_to_wn))
-        ax2.tick_params(
-            axis='both', which='major', labelsize=font_size
-        )
         if reciprocal_label is not None:
             ax2.set_xlabel(reciprocal_label, fontsize=font_size)
-        ax2.xaxis.get_offset_text().set_fontsize(font_size)
-        ax2.xaxis.labelpad = 20
+        ax2.xaxis.labelpad = 10
         if scientific:
             ax2.ticklabel_format(
                 axis='x', style='sci', scilimits=(0, 0), useMathText=True

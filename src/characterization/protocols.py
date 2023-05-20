@@ -86,12 +86,15 @@ class CharacterizationProtocol:
         calibration_scaled = transfer_calibration / scale_factor
         estimation_scaled = transfer_estimated / scale_factor
         return plot_1d(
-            x=self.calibration.central_wavenumbers,
+            x=self.calibration.central_wavenumbers*10000,
             y=np.vstack(tup=(calibration_scaled, estimation_scaled)),
-            x_label=r"Central wavenumbers [micrometers]",
-            y_label="Normalized intensity",
+            x_label=r"Central wavenumbers [$\r{mathrm{cm}^{-1}}$]",
+            y_label="Mean scaled intensity",
             title="Transfer function curve fitting",
             legend=["Raw acquisition", "Fitted transfer function"],
+            scientific=True,
+            reciprocal_axis=True,
+            reciprocal_label=r"Central wavelengths [$\r{mathrm{nm}$]",
         )
 
 

@@ -151,8 +151,7 @@ class CharacterizationPixel:
             x=wavenumbers,
             y=y,
             x_label=r"Central wavenumbers [$\mathrm{c m^{-1}}$]",
-            y_label="Normalized intensity",
-            title=title + f" (Interferometer index: {interferometer + 1})",
+            y_label="Mean scaled intensity",
             legend=legend,
             font_size=font_size,
             figure=figure,
@@ -161,6 +160,8 @@ class CharacterizationPixel:
             reciprocal_axis=True,
             reciprocal_label=r"Central wavelengths [$\mathrm{n m}$]",
         )
+        title = title + f" (Interferometer index: {interferometer + 1})"
+        ax.set_title(title, fontsize=font_size+6)
         return fig, ax
 
 
@@ -349,9 +350,8 @@ class Characterization:
             y=reflectivity_show.T,
             x=wavenumber,
             save_filepath=save_filepath,
-            title="Estimated reflectivity",
             x_label=r"Wavenumbers [$\mathrm{c m^{-1}}$]",
-            y_label="Reflectivity",
+            y_label="Estimated reflectivity",
             font_size=font_size,
             figure=figure,
             x_limit=(np.min(wavenumber), np.max(wavenumber)),
@@ -377,9 +377,8 @@ class Characterization:
             y=gain_show.T,
             x=wavenumber * 10000,
             save_filepath=save_filepath,
-            title="Estimated gain",
             x_label=r"Wavenumbers [$\mathrm{c m^{-1}}$]",
-            y_label="Intensity",
+            y_label="Estimated gain",
             font_size=font_size,
             figure=figure,
             scientific=True,
@@ -409,8 +408,7 @@ class Characterization:
             x=np.arange(len(opd_show)) + 1,
             y=opd_show,
             x_label=f"Interferometers' indices",
-            y_label=r"OPD [$\mathrm{\mu m}$]",
-            title="Estimated optical path differences",
+            y_label=r"Estimated OPD [$\mathrm{\mu m}$]",
             line_style="",
             marker="*",
             font_size=font_size,
