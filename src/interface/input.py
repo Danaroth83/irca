@@ -137,10 +137,10 @@ class Imspoc:
         return size[0], size[1], self.centers.shape[0], self.image.shape[2]
 
     def visualize(
-            self,
-            acquisition: int = 0,
-            points: list[tuple[float, float]] = None,
-            figure: tuple[Fig, Axs] = None,
+        self,
+        acquisition: int = 0,
+        points: list[tuple[float, float]] = None,
+        figure: tuple[Fig, Axs] = None,
     ) -> tuple[Fig, Axs]:
         """
         Visualizes a single acquisition as cropped subimages.
@@ -199,7 +199,7 @@ class Imspoc:
         y_label = "Intensity"
         if normalize:
             interferogram = interferogram / np.mean(interferogram)
-            y_label = "Normalized Intensity"
+            y_label = "Mean scaled Intensity"
         interferogram_shape = self.shape[2]
         return plot_1d(
             x=np.arange(interferogram_shape),

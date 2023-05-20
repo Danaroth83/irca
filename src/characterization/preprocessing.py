@@ -157,9 +157,9 @@ class CharacterizationPixel:
             font_size=font_size,
             figure=figure,
             x_limit=(wavenumbers.min(), wavenumbers.max()),
-        )
-        ax.ticklabel_format(
-            axis='x', style='sci', scilimits=(0, 0), useMathText=True
+            scientific=True,
+            reciprocal_axis=True,
+            reciprocal_label=r"Central wavelengths [$\mathrm{n m}$]",
         )
         return fig, ax
 
@@ -351,13 +351,13 @@ class Characterization:
             save_filepath=save_filepath,
             title="Estimated reflectivity",
             x_label=r"Wavenumbers [$\mathrm{c m^{-1}}$]",
-            y_label="Intensity",
+            y_label="Reflectivity",
             font_size=font_size,
             figure=figure,
             x_limit=(np.min(wavenumber), np.max(wavenumber)),
-        )
-        ax.ticklabel_format(
-            axis='x', style='sci', scilimits=(0, 0), useMathText=True
+            scientific=True,
+            reciprocal_axis=True,
+            reciprocal_label=r"Wavenumbers [$\mathrm{nm}$]",
         )
         return fig, ax
 
@@ -382,9 +382,9 @@ class Characterization:
             y_label="Intensity",
             font_size=font_size,
             figure=figure,
-        )
-        ax.ticklabel_format(
-            axis='x', style='sci', scilimits=(0, 0), useMathText=True
+            scientific=True,
+            reciprocal_axis=True,
+            reciprocal_label=r"Wavenumbers [$\mathrm{nm}$]",
         )
         return fig, ax
 
@@ -435,7 +435,7 @@ class Characterization:
         y_label = "Intensity"
         if normalize:
             transfer_choice = transfer_choice / np.mean(transfer_choice)
-            y_label = "Normalized intensity"
+            y_label = "Mean scaled intensity"
         fig, ax = plot_1d(
             x=wavenumbers * 10000,  # to show in cm^{-1}
             y=transfer_choice,
@@ -446,9 +446,9 @@ class Characterization:
             save_filepath=save_filepath,
             figure=figure,
             color=color,
-        )
-        ax.ticklabel_format(
-            axis='x', style='sci', scilimits=(0, 0), useMathText=True
+            scientific=True,
+            reciprocal_axis=True,
+            reciprocal_label=r"Wavelengths [$\mathrm{nm}$]",
         )
         return fig, ax
 
@@ -479,9 +479,9 @@ class Characterization:
             save_filepath=save_filepath,
             figure=figure,
             legend=["Reference", "Estimated"],
-            x_limit=(wavenumbers.min(), wavenumbers.max())
-        )
-        ax.ticklabel_format(
-            axis='x', style='sci', scilimits=(0, 0), useMathText=True
+            x_limit=(wavenumbers.min(), wavenumbers.max()),
+            scientific=True,
+            reciprocal_axis=True,
+            reciprocal_label=r"Wavelengths [$\mathrm{nm}$]",
         )
         return fig, ax

@@ -110,6 +110,9 @@ def plot_1d(
     save_filepath: Path | str = None,
     color: str = None,
     x_limit: tuple[float, float] = None,
+    reciprocal_axis: bool = False,
+    reciprocal_label: str | None = None,
+    scientific: bool = False,
 ) -> tuple[Fig, Axs]:
     y = y[np.newaxis, :] if y.ndim == 1 else y
     fig, ax = plt.subplots() if figure is None else figure
@@ -132,9 +135,36 @@ def plot_1d(
         ax.set_title(title, fontsize=font_size)
     if legend is not None:
         ax.legend(legend, fontsize=font_size, frameon=False)
+    if scientific:
+        ax.ticklabel_format(
+            axis='x', style='sci', scilimits=(0, 0), useMathText=True
+        )
+
+    if reciprocal_axis:
+        ax2 = ax.secondary_xaxis('top', functions=(wn_to_wl, wl_to_wn))
+        ax2.tick_params(
+            axis='both', which='major', labelsize=font_size
+        )
+        if reciprocal_label is not None:
+            ax2.set_xlabel(reciprocal_label, fontsize=font_size)
+        ax2.xaxis.get_offset_text().set_fontsize(font_size)
+        ax2.xaxis.labelpad = 20
+        if scientific:
+            ax2.ticklabel_format(
+                axis='x', style='sci', scilimits=(0, 0), useMathText=True
+            )
+
     if save_filepath is not None:
         plt.savefig(save_filepath)
     return fig, ax
+
+
+def wn_to_wl(v: np.ndarray):
+    return np.divide(1e7, v, out=np.zeros_like(v), where=v != 0)
+
+
+def wl_to_wn(v: np.ndarray):
+    return np.divide(1e-7, v, out=np.zeros_like(v), where=v != 0)
 
 
 def plot_shaded(
@@ -148,6 +178,9 @@ def plot_shaded(
     figure: tuple[Fig, Axs] = None,
     save_filepath: Path | str = None,
     x_limit: tuple[float, float] = None,
+    scientific: bool = False,
+    reciprocal_axis: bool = False,
+    reciprocal_label: str | None = None,
 ) -> tuple[Fig, Axs]:
     """Plots a 1d curve with a shaded standard deviation"""
     fig, ax = plt.subplots() if figure is None else figure
@@ -169,6 +202,9 @@ def plot_shaded(
         font_size=font_size,
         save_filepath=save_filepath,
         x_limit=x_limit,
+        scientific=scientific,
+        reciprocal_axis=reciprocal_axis,
+        reciprocal_label=reciprocal_label,
     )
 
 

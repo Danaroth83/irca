@@ -178,12 +178,12 @@ class HyperspectralImage:
             y=self.image[point[0], point[1], :],
             title="Spectrum",
             x_label=r"Wavenumbers [$\mathrm{c m^{-1}}$]",
-            y_label="Intensity",
+            y_label="Normalized intensity",
             figure=figure,
             x_limit=(wavenumbers.min(), wavenumbers.max()),
-        )
-        ax.ticklabel_format(
-            axis='x', style='sci', scilimits=(0, 0), useMathText=True
+            scientific=True,
+            reciprocal_axis=True,
+            reciprocal_label=r"Wavelengths [$\mathrm{nm}$]",
         )
         return fig, ax
 
