@@ -201,15 +201,19 @@ class Imspoc:
             interferogram = interferogram / np.mean(interferogram)
             y_label = "Mean scaled Intensity"
         interferogram_shape = self.shape[2]
-        return plot_1d(
+        fig, ax = plot_1d(
             x=np.arange(interferogram_shape),
             y=interferogram,
             x_label="Interferometers' index",
             y_label=y_label,
-            title="Interferogram",
             figure=figure,
-            x_limit=(0, interferogram_shape-1)
+            x_limit=(0, interferogram_shape-1),
+            color="y",
         )
+        ax.set_title("Interferogram", fontsize=20)
+        ax.set_facecolor("k")
+        ax.grid(color="gray")
+        return fig, ax
 
 
 def evaluate_corners(

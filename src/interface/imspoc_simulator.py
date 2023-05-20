@@ -176,15 +176,16 @@ class HyperspectralImage:
         fig, ax = plot_1d(
             x=wavenumbers,
             y=self.image[point[0], point[1], :],
-            title="Spectrum",
             x_label=r"Wavenumbers [$\mathrm{c m^{-1}}$]",
             y_label="Normalized intensity",
             figure=figure,
             x_limit=(wavenumbers.min(), wavenumbers.max()),
+            color="C4",
             scientific=True,
             reciprocal_axis=True,
             reciprocal_label=r"Wavelengths [$\mathrm{nm}$]",
         )
+        ax.set_title("Spectrum", fontsize=20)
         return fig, ax
 
     def dump(self, save_folder: Path | str) -> None:

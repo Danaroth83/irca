@@ -112,16 +112,16 @@ class CharacterizationPixel:
             x=wavenumbers,
             y=np.vstack((data_mean_one, norm_mean_one, normalized_data)),
             x_label=r"Central wavenumbers [$\mathrm{cm^{-1}}$]",
-            y_label="Normalized intensity",
-            title=title,
+            y_label="Mean scaled intensity",
             legend=legend,
             font_size=font_size,
             figure=figure,
             x_limit=(wavenumbers.min(), wavenumbers.max()),
+            scientific=True,
+            reciprocal_axis=True,
+            reciprocal_label=r"Central wavelengths [$\mathrm{nm}$]",
         )
-        ax.ticklabel_format(
-            axis='x', style='sci', scilimits=(0, 0), useMathText=True
-        )
+        ax.set_title(title, fontsize=font_size+4)
         return fig, ax
 
     def visualize_compare(
@@ -161,7 +161,7 @@ class CharacterizationPixel:
             reciprocal_label=r"Central wavelengths [$\mathrm{n m}$]",
         )
         title = title + f" (Interferometer index: {interferometer + 1})"
-        ax.set_title(title, fontsize=font_size+6)
+        ax.set_title(title, fontsize=font_size+4)
         return fig, ax
 
 
@@ -439,7 +439,6 @@ class Characterization:
             y=transfer_choice,
             x_label=r"Wavenumbers [$\mathrm{c m^{-1}}$]",
             y_label=y_label,
-            title="Transfer function",
             font_size=font_size,
             save_filepath=save_filepath,
             figure=figure,
@@ -448,6 +447,7 @@ class Characterization:
             reciprocal_axis=True,
             reciprocal_label=r"Wavelengths [$\mathrm{nm}$]",
         )
+        ax.set_title("Transfer function", fontsize=font_size+4)
         return fig, ax
 
     def visualize_compare(
@@ -471,8 +471,7 @@ class Characterization:
             x=wavenumbers,  # to show in cm^{-1}
             y=transfer_total,
             x_label=r"Wavenumbers [$\mathrm{cm^{-1}}$]",
-            y_label="Normalized intensity",
-            title="Characterization",
+            y_label="Mean scaled intensity",
             font_size=font_size,
             save_filepath=save_filepath,
             figure=figure,
@@ -482,4 +481,5 @@ class Characterization:
             reciprocal_axis=True,
             reciprocal_label=r"Wavelengths [$\mathrm{nm}$]",
         )
+        ax.set_title("Characterization", fontsize=font_size+4)
         return fig, ax
