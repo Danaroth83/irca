@@ -72,15 +72,11 @@ To use this code, please cite:
 
 ```
 @article{picone2023irca,
-      title={Interferometer response characterization algorithm for multi-aperture Fabry-Perot imaging spectrometers}, 
-      author={Picone, Daniele and Gousset, Silv\`ere and Dalla Mura, Mauro and Ferrec, Yann and Le Coarer, Etienne},
-      booktitle={arXiv},
-      year={2023},
-      month=mar,
-      eprint={2303.14076},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV},
-      doi={https://doi.org/10.48550/arXiv.2303.14076},
-      note={Under review.},
+  title   = {Interferometer response characterization algorithm for multi-aperture {Fabry-Perot} imaging spectrometers},
+  author  = {Picone, Daniele and Gousset, Silv{\'e}re and Dalla Mura, Mauro and Ferrec, Yann and le Coarer, Etienne},
+  journal = {Optics Express},
+  year    = {2023},
+  note    = {In press},
+  doi     = {https://doi.org/10.1364/OE.491698},
 }
 ```
