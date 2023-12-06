@@ -46,7 +46,7 @@ This repository provides three Jupyter notebooks associated to the main function
     ├── notebooks                   <- Jupyter notebooks interactive demo scripts
     │   ├── characterization.ipynb  <- Characterization demo script
     │   ├── model.ipynb             <- Interferometry model demo script
-    │   └── simulator.ipyng         <- Simulator demo script
+    │   └── simulator.ipynb         <- Simulator demo script
     │
     └── src                         <- Source code folder
         ├── characterization        <- Characterization module
@@ -72,11 +72,12 @@ To use this code, please cite:
 
 ```
 @article{picone2023irca,
-  title   = {Interferometer response characterization algorithm for multi-aperture {Fabry-Perot} imaging spectrometers},
-  author  = {Picone, Daniele and Gousset, Silv{\'e}re and Dalla Mura, Mauro and Ferrec, Yann and le Coarer, Etienne},
-  journal = {Optics Express},
-  year    = {2023},
-  note    = {In press},
-  doi     = {https://doi.org/10.1364/OE.491698},
+  title     = {Interferometer response characterization algorithm for multi-aperture {Fabry-Perot} imaging spectrometers},
+  author    = {Picone, Daniele and Gousset, Silv{\'e}re and Dalla Mura, Mauro and Ferrec, Yann and le Coarer, Etienne},
+  journal   = {Optics Express},
+  publisher = {Optica Publishing Group},
+  year      = {2023},
+  note      = {In press},
+  doi       = {https://doi.org/10.1364/OE.491698},
 }
 ```
