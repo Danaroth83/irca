@@ -77,7 +77,10 @@ To use this code, please cite:
   journal   = {Optics Express},
   publisher = {Optica Publishing Group},
   year      = {2023},
-  note      = {In press},
+  month     = jun,
+  number    = {14},
+  pages     = {23066--23085},
+  volume    = {31},
   doi       = {https://doi.org/10.1364/OE.491698},
 }
 ```
