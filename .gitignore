@@ -92,3 +92,7 @@ target/
 .pytest_cache/
 
 # Custom exclusions
+src/_excluded/
+data/hyperspectral/chikusei
+data/cie
+reports/

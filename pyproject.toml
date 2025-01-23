@@ -6,7 +6,7 @@ authors = ["Daniele Picone <danaroth83@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.12"
+python = ">=3.9,<3.12"
 numpy = "^1.24.2"
 matplotlib = "^3.7.1"
 scipy = "^1.10.1"
@@ -16,6 +16,11 @@ jupyter = "^1.0.0"
 update = "^0.0.1"
 jupyter-server = "^2.12.0"
 
+
+[tool.poetry.group.dev.dependencies]
+spectral = "^0.23.1"
+scikit-image = "^0.22.0"
+pandas = "^2.1.4"
 
 [build-system]
 requires = ["poetry-core"]
